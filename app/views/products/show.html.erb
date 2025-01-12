@@ -3,4 +3,5 @@
 <h2><%= "$#{@product.price}" %></h2>
 
 <p><%= @product.stock_quantity %></p>
+<p>Category: <%= @product.category.name %></p>
 <p><%= @product.description ? @product.description : "No description for product." %></p>

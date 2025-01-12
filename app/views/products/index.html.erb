@@ -5,6 +5,7 @@
     <li>
       <%= link_to product.title, product %>
       <%= "$#{product.price}" %>
+      <%= product.category.name %>
     </li>
   <% end %>
 </ul>
