@@ -1,15 +1,15 @@
 require "csv"
 
-# Q9: Create Fake products for the store
+# Reset the database when re-running the seed file.
+Product.destroy_all
+Category.destroy_all
+
+# Q9: Create Fake products for the store.
 # 676.times do
 #   Product.create!(title: Faker::Commerce.product_name,
 #                   price: Faker::Commerce.price,
 #                   stock_quantity: Faker::Number.number(digits: 2))
 # end
-
-# Reset the database when re-running the seed file.
-Product.destroy_all
-Category.destroy_all
 
 # Parse and read the csv file into a variable.
 csv_file = Rails.root.join('db/products.csv')
